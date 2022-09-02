@@ -36,7 +36,8 @@ export default {
       this.completed = false;
       this.onGoing = true;
     }
-  }
+  },
+
 }
 </script>
 <style scoped>

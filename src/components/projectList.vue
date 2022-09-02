@@ -29,39 +29,44 @@ export default {
                     isComplete: false,
                     isGoing: false,
                     details: "Some details about create homepage banner."
-                },
-                {
-                    id: "Make marketing email",
-                    isComplete: true,
-                    isGoing: false,
-                    details: "Some details about make marketing email."
-                },
-                {
-                    id: "Update promo links",
-                    isComplete: false,
-                    isGoing: false,
-                    details: "Some details update promo links."
-                }],
-            completedTitles: [{
-                id: "Make marketing email",
-                isComplete: true,
-                isGoing: false,
-            },],
-            isGoingTitle: [
-                {
-                    id: "Create homepage banner",
-                    isComplete: false,
-                    isGoing: false,
-                },
-                {
-                    id: "Update promo links",
-                    isComplete: false,
-                    isGoing: false,
-                }
-            ]
+                },],
+            completedTitles: [],
+            isGoingTitle: []
         }
     },
     methods: {
+        loadProjects() {
+            fetch("https://project-planner-660cf-default-rtdb.firebaseio.com/projects.json")
+                .then((response) => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                })
+                .then((data) => {
+                    const results = [];
+                    for (const id in data) {
+                        results.push({
+                            idTitl: id,
+                            id: data[id].title,
+                            isComplete: data[id].isComplete,
+                            isGoing: data[id].isGoing,
+                            description: data[id].description,
+                        });
+                    }
+                    this.titles = results;
+                    this.completedTitles = this.titles.filter((t) => {
+                        return t.isComplete !== false;
+                    });
+                    this.isGoingTitle = this.titles.filter((t) => {
+                        return t.isComplete !== true;
+                    })
+                })
+                .catch((error) => {
+                    this.error = "Failed to fetch data - please try again later";
+                    this.isLoading = false;
+                    console.log(error);
+                });
+        },
         deletePro(title) {
             this.titles = this.titles.filter((titl) => titl.id !== title);
         },
@@ -80,7 +85,11 @@ export default {
             this.$emit("projects", this.titles);
         },
 
-    }
+    },
+    mounted() {
+        this.loadProjects();
+
+    },
 }
 </script>
 
