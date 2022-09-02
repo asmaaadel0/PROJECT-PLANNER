@@ -1,4 +1,5 @@
 <template>
+    <button @click="loadProjects">Refresh</button>
     <div v-if="viewAll">
         <project-item v-for="title in titles" :key="title.id" :project="title" @del="deletePro" @com="completePro">
         </project-item>
@@ -93,5 +94,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+button {
+    background-color:  fuchsia;
+    border: none;
+    color: white;
+    padding: 0.6rem;
+    width: 7rem;
+    margin: 1rem;
+    border-radius: 0.4rem;
+}
+button:hover{
+    background-color:  rgb(251, 74, 251);
+}
 </style>
