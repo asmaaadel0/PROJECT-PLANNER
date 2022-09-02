@@ -20,7 +20,7 @@ export default {
   methods: {
     addProject(title, description) {
       const project = {
-        title: description,
+        title: title,
         isComplete: false,
         isGoing: false,
         description: description,

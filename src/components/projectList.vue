@@ -29,7 +29,7 @@ export default {
                     id: "Create homepage banner",
                     isComplete: false,
                     isGoing: false,
-                    details: "Some details about create homepage banner."
+                    description: "Some details about create homepage banner."
                 },],
             completedTitles: [],
             isGoingTitle: []
