@@ -96,15 +96,16 @@ export default {
 
 <style scoped>
 button {
-    background-color:  fuchsia;
+    background-color:  rgb(41, 215, 204);
     border: none;
     color: white;
     padding: 0.6rem;
     width: 7rem;
     margin: 1rem;
+    margin-top: 2rem;
     border-radius: 0.4rem;
 }
 button:hover{
-    background-color:  rgb(251, 74, 251);
+    background-color:  rgb(45, 232, 219);
 }
 </style>
