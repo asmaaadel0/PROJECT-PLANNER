@@ -29,19 +29,19 @@ export default {
       showAddProject: false,
       projects: [
         {
-          title: "Create homepage banner",
+          title: "Create new homepage banner",
           isComplete: false,
-          description: "Some details about create homepage banner.",
+          description: "Some details about course.",
         },
         {
-          title: "Create homepage",
+          title: "Make marketing email",
           isComplete: false,
-          description: "Some details about create homepage banner.",
+          description: "Some details about course.",
         },
         {
-          title: "Create",
+          title: "Update promo links",
           isComplete: false,
-          description: "Some details about create homepage banner.",
+          description: "Some details about course.",
         },
       ],
       completedProjects: [],
