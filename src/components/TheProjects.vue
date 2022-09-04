@@ -115,10 +115,6 @@ ul {
   border-left: 5px solid fuchsia;
 }
 
-h2 {
-  display: inline;
-}
-
 svg {
   padding: 0px;
   margin-left: 3rem;
@@ -129,11 +125,6 @@ svg:hover {
   color: black;
 }
 
-.title {
-  padding: 10px;
-  text-align: left;
-  display: inline;
-}
 li{
     display: inline;
 }
