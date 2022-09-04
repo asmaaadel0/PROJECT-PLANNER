@@ -12,9 +12,11 @@
 
 ## website description <a name = "website-description"></a>
 
-- The planner project is app that allow you to add projects you want to do,
-when you finish any project you can click on complete icon, if you want to delete the 
-project click on delete icon
+- The planner project is app that allow you to:
+  -  Add projects you want to do.
+  - When you finish any project you can click on complete icon.
+  -  if you want to delete the project click on delete icon.
+  -  if you click on the project title, you will see the description of the project
 
 ## Project setup <a name = "Project-setup"></a>
 - npm install
