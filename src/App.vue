@@ -60,9 +60,10 @@ export default {
         isGoing: false,
         description: description,
       });
+      this.showProjects = true;
+      this.showAddProject = false;
     },
     deleteProject(index) {
-      console.log(index);
       this.projects.splice(index, 1);
     },
   },

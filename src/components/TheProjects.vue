@@ -16,6 +16,7 @@
       <li>
         <div class="icons">
           <svg
+            @click="deleteProject(project.title)"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -29,7 +30,6 @@
           </svg>
 
           <svg
-            @click="deleteProject(project.title)"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
