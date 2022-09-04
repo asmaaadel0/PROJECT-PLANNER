@@ -20,7 +20,7 @@
           </svg>
 
           <svg
-            @click="completeProject()"
+            @click="completeProject(project.title)"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -45,7 +45,7 @@ import baseCard from "./ui/baseCard.vue";
 export default {
   data() {
     return {
-      isComplete: false,
+      isComplete: this.project.isComplete,
       showDesc: false,
     };
   },
@@ -53,11 +53,13 @@ export default {
     baseCard,
   },
   props: ["project"],
+  emits: ["deleteProject", "completeProject"],
   methods: {
     deleteProject(title) {
       this.$emit("deleteProject", title);
     },
-    completeProject() {
+    completeProject(title) {
+      this.$emit("completeProject", title);
       this.isComplete = !this.isComplete;
     },
     showDescription() {

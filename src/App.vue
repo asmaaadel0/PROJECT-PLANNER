@@ -4,6 +4,9 @@
     v-if="showProjects"
     :projects="projects"
     @deleteProject="deleteProject"
+    @completeProject="completeProject"
+    :completedProjects="completedProjects"
+    :isGoingProjects="isGoingProjects"
   ></the-projects>
   <add-project v-if="this.showAddProject" @add="addProject"></add-project>
 </template>
@@ -28,25 +31,30 @@ export default {
         {
           title: "Create homepage banner",
           isComplete: false,
-          isGoing: false,
           description: "Some details about create homepage banner.",
         },
         {
           title: "Create homepage",
           isComplete: false,
-          isGoing: false,
           description: "Some details about create homepage banner.",
         },
         {
           title: "Create",
           isComplete: false,
-          isGoing: false,
           description: "Some details about create homepage banner.",
         },
       ],
       completedProjects: [],
       isGoingProjects: [],
     };
+  },
+  beforeMount() {
+    this.completedProjects = this.projects.filter((t) => {
+      return t.isComplete !== false;
+    });
+    this.isGoingProjects = this.projects.filter((t) => {
+      return t.isComplete !== true;
+    });
   },
   methods: {
     show(showProjects, showAddProject) {
@@ -68,6 +76,22 @@ export default {
         (project) => project.title === title
       );
       this.projects.splice(index, 1);
+      this.completedProjects = this.projects.filter((t) => {
+        return t.isComplete !== false;
+      });
+      this.isGoingProjects = this.projects.filter((t) => {
+        return t.isComplete !== true;
+      });
+    },
+    completeProject(title) {
+      const p = this.projects.find((project) => project.title === title);
+      p.isComplete = !p.isComplete;
+      this.completedProjects = this.projects.filter((t) => {
+        return t.isComplete !== false;
+      });
+      this.isGoingProjects = this.projects.filter((t) => {
+        return t.isComplete !== true;
+      });
     },
   },
 };
