@@ -80,7 +80,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+button:hover {
   cursor: pointer;
   color: black;
 }
