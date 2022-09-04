@@ -1,47 +1,71 @@
 <template>
-  <nav>
-    <router-link :to="{ name: 'TheProjects' }" >Projects</router-link> |
-    <router-link :to="{ name: 'AddProject' }">Add a New Project</router-link>
-  </nav>
-  <router-view />
+  <the-header @show="show"></the-header>
+  <component :is="selected" :projects="projects"></component>
 </template>
 
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+<script>
+import TheHeader from "./components/layout/TheHeader.vue";
+import TheProjects from "./components/TheProjects.vue";
+import AddProject from "./components/AddProject.vue";
 
+export default {
+  name: "App",
+  components: {
+    TheHeader,
+    TheProjects,
+    AddProject,
+  },
+  data() {
+    return {
+      selected: "the-projects",
+      projects: [
+        {
+          title: "Create homepage banner",
+          isComplete: false,
+          isGoing: false,
+          description: "Some details about create homepage banner.",
+        },
+        {
+          title: "Create homepage",
+          isComplete: false,
+          isGoing: false,
+          description: "Some details about create homepage banner.",
+        },
+        {
+          title: "Create",
+          isComplete: false,
+          isGoing: false,
+          description: "Some details about create homepage banner.",
+        },
+      ],
+      completedProjects: [],
+      isGoingProjects: [],
+    };
+  },
+  methods: {
+    show(showProjects) {
+      if(showProjects){
+        this.selected="the-projects";
+      }
+      else{
+        this.selected="add-project";
+      }
+    },
+  },
+};
+</script>
+
+<style>
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  background: rgb(238, 238, 238);
+  font-family: sans-serif;
+  background-color: rgb(238, 238, 238);
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(143, 142, 142);
-  background: rgb(238, 238, 238);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-nav a.router-link-exact-active {
-  border-bottom: 4px solid rgb(41, 215, 204);
-  color: black;
+body {
+  margin: 0;
 }
 </style>
