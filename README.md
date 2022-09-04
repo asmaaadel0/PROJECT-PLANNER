@@ -1,6 +1,5 @@
 ## 📝 Table of Contents
 
-- [📝 Table of Contents](#-table-of-contents)
 - [About <a name = "about"></a>](#about-)
 - [website description <a name = "website-description"></a>](#website-description-)
 - [Project setup <a name = "Project-setup"></a>](#project-setup-)
