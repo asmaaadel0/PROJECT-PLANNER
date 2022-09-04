@@ -1,6 +1,11 @@
 <template>
   <the-header @show="show"></the-header>
-  <component :is="selected" :projects="projects"></component>
+  <the-projects
+    v-if="showProjects"
+    :projects="projects"
+    @deleteProject="deleteProject"
+  ></the-projects>
+  <add-project v-if="this.showAddProject" @add="addProject"></add-project>
 </template>
 
 <script>
@@ -17,7 +22,8 @@ export default {
   },
   data() {
     return {
-      selected: "the-projects",
+      showProjects: true,
+      showAddProject: false,
       projects: [
         {
           title: "Create homepage banner",
@@ -43,13 +49,21 @@ export default {
     };
   },
   methods: {
-    show(showProjects) {
-      if(showProjects){
-        this.selected="the-projects";
-      }
-      else{
-        this.selected="add-project";
-      }
+    show(showProjects, showAddProject) {
+      this.showProjects = showProjects;
+      this.showAddProject = showAddProject;
+    },
+    addProject(title, description) {
+      this.projects.push({
+        title: title,
+        isComplete: false,
+        isGoing: false,
+        description: description,
+      });
+    },
+    deleteProject(index) {
+      console.log(index);
+      this.projects.splice(index, 1);
     },
   },
 };

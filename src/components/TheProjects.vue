@@ -29,6 +29,7 @@
           </svg>
 
           <svg
+            @click="deleteProject(project.title)"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -79,6 +80,12 @@ export default {
       this.completed = false;
       this.onGoing = true;
     },
+    deleteProject(title) {
+      const index = this.projects.findIndex(
+        (project) => project.title === title
+        );
+        this.$emit("deleteProject",index);
+    },
   },
 };
 </script>
@@ -125,8 +132,8 @@ svg:hover {
   color: black;
 }
 
-li{
-    display: inline;
+li {
+  display: inline;
 }
 
 .icons {
