@@ -1,0 +1,24 @@
+[debug] [2022-09-04T21:21:41.892Z] ----------------------------------------------------------------------
+[debug] [2022-09-04T21:21:41.894Z] Command:       D:\programs\firebase-tools-instant-win.exe C:\Users\Asmaa Adel\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2022-09-04T21:21:41.895Z] CLI Version:   11.8.0
+[debug] [2022-09-04T21:21:41.895Z] Platform:      win32
+[debug] [2022-09-04T21:21:41.895Z] Node Version:  v16.16.0
+[debug] [2022-09-04T21:21:41.896Z] Time:          Sun Sep 04 2022 23:21:41 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-09-04T21:21:41.897Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-04T21:21:41.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-04T21:21:41.986Z] > authorizing via signed-in user (adelasmaa333@gmail.com)
+[debug] [2022-09-04T21:21:41.986Z] [iam] checking project project-planner-a61e1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-04T21:21:41.989Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-planner-a61e1:testIamPermissions [none]
+[debug] [2022-09-04T21:21:41.990Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-planner-a61e1:testIamPermissions x-goog-quota-user=projects/project-planner-a61e1
+[debug] [2022-09-04T21:21:41.990Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-planner-a61e1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-04T21:21:43.182Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-planner-a61e1:testIamPermissions 200
+[debug] [2022-09-04T21:21:43.183Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-planner-a61e1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-04T21:21:43.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-planner-a61e1 [none]
+[debug] [2022-09-04T21:21:44.085Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-planner-a61e1 200
+[debug] [2022-09-04T21:21:44.086Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-planner-a61e1 {"projectId":"project-planner-a61e1","projectNumber":"892916676075","displayName":"PROJECT-PLANNER","name":"projects/project-planner-a61e1","resources":{"hostingSite":"project-planner-a61e1"},"state":"ACTIVE","etag":"1_39cd2e7a-1b5c-437d-9685-6d5677dbb46f"}
+[info] 
+[info] === Deploying to 'project-planner-a61e1'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-04T21:21:44.093Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-planner-a61e1 [none]
