@@ -2,35 +2,30 @@
 
 - [📝 Table of Contents](#-table-of-contents)
 - [About <a name = "about"></a>](#about-)
-- [Gaming System <a name = "gaming-system"></a>](#gaming-system-)
+- [website description <a name = "website-description"></a>](#website-description-)
+- [Project setup <a name = "Project-setup"></a>](#project-setup-)
+- [Compiles and hot-reloads for development <a name = "Compiles-and-hot-reloads-for-development"></a>](#compiles-and-hot-reloads-for-development-)
 - [Website link <a name = "link"></a>](#website-link-)
-- [ScreenShots from the game: <a name = "screen-shots"></a>](#screenshots-from-the-game-)
 - [Contributors <a name = "Contributors"></a>](#contributors-)
 
 ## About <a name = "about"></a>
 - project planner application implemented with Vue.js, HTML and CSS.
 
-## Gaming System <a name = "gaming-system"></a>
+## website description <a name = "website-description"></a>
 
+- The planner project is app that allow you to add projects you want to do,
+when you finish any project you can click on complete icon, if you want to delete the 
+project click on delete icon
 
+## Project setup <a name = "Project-setup"></a>
+- npm install
+
+## Compiles and hot-reloads for development <a name = "Compiles-and-hot-reloads-for-development"></a>
+- npm run serve
 
 ## Website link <a name = "link"></a>
+- https://project-planner-a61e1.web.app
 
--  https://project-planner-a61e1.web.app
-
-
- ## ScreenShots from the game: <a name = "screen-shots"></a>
-<h3 align='left'>Main Screen</h3>
-
- ![image](https://user-images.githubusercontent.com/88618793/182143193-b4fb1d94-b311-45d4-85bc-a0961976620c.png)
-
- <h3 align='left'>When the player wins</h3>
-
-![image](https://user-images.githubusercontent.com/88618793/182144298-4540fb25-151a-49aa-aff4-a6e3d156d9c1.png)
-
-<h3 align='left'>Battle Log</h3>
-
-![image](https://user-images.githubusercontent.com/88618793/182144110-475b7291-268d-4e66-ab6d-fba1075e89f2.png)
 ## Contributors <a name = "Contributors"></a>
 
 <table>
@@ -43,6 +38,4 @@
     
   </tr>
  </table>
-
-
 
