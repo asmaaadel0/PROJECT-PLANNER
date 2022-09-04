@@ -63,7 +63,10 @@ export default {
       this.showProjects = true;
       this.showAddProject = false;
     },
-    deleteProject(index) {
+    deleteProject(title) {
+      const index = this.projects.findIndex(
+        (project) => project.title === title
+      );
       this.projects.splice(index, 1);
     },
   },
