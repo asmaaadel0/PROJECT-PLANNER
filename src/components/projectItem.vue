@@ -1,7 +1,8 @@
 <template>
   <base-card :class="{ complete: isComplete }">
     <ul>
-      <h2>{{ project.title }}</h2>
+      <h2 @click="showDescription">{{ project.title }}</h2>
+      <p v-if="showDesc">{{ project.description }}</p>
       <li>
         <div class="icons">
           <svg
@@ -45,6 +46,7 @@ export default {
   data() {
     return {
       isComplete: false,
+      showDesc: false,
     };
   },
   components: {
@@ -57,6 +59,9 @@ export default {
     },
     completeProject() {
       this.isComplete = !this.isComplete;
+    },
+    showDescription() {
+      this.showDesc = !this.showDesc;
     },
   },
 };
@@ -84,7 +89,6 @@ svg:hover {
 li {
   display: inline;
 }
-
 .icons {
   text-align: end;
   /* display: inline; */
