@@ -8,7 +8,7 @@
 - [Contributors <a name = "Contributors"></a>](#contributors-)
 
 ## About <a name = "about"></a>
-- Monster Slayer Game is a simple game using Vue.js, HTML and CSS.
+- project planner application implemented with Vue.js, HTML and CSS.
 
 ## Gaming System <a name = "gaming-system"></a>
 
@@ -22,7 +22,7 @@ In the end of page there is a Battle Log to see log messages
 
 ## Website link <a name = "link"></a>
 
--  https://monster-slayer-game-90211.web.app/
+-  https://project-planner-a61e1.web.app
 
 
  ## ScreenShots from the game: <a name = "screen-shots"></a>
