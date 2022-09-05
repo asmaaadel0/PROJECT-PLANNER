@@ -25,7 +25,7 @@
 - npm run serve
 
 ## Website link <a name = "link"></a>
-- https://project-planner-a61e1.web.app
+- https://project-planner-eight.vercel.app/
 
 ## Contributors <a name = "Contributors"></a>
 
