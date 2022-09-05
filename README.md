@@ -5,7 +5,7 @@
 - [Project setup <a name = "Project-setup"></a>](#project-setup-)
 - [Compiles and hot-reloads for development <a name = "Compiles-and-hot-reloads-for-development"></a>](#compiles-and-hot-reloads-for-development-)
 - [Website link <a name = "link"></a>](#website-link-)
-- [ScreenShots from the game: <a name = "screen-shots"></a>](#screenshots-from-the-game-)
+- [ScreenShots: <a name = "screen-shots"></a>](#screenshots-from-the-game-)
 - [Contributors <a name = "Contributors"></a>](#contributors-)
 
 ## About <a name = "about"></a>
@@ -28,7 +28,7 @@
 ## Website link <a name = "link"></a>
 - https://project-planner-eight.vercel.app/
 
-## ScreenShots from the game: <a name = "screen-shots"></a>
+## ScreenShots: <a name = "screen-shots"></a>
 <h3 align='left'>Main Screen:</h3>
 
 ![Capture](https://user-images.githubusercontent.com/88618793/188425663-3aba84ef-221b-4cd7-afb9-8c1657259c13.PNG)
