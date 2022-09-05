@@ -1,11 +1,11 @@
 ## 📝 Table of Contents
 
-- [📝 Table of Contents](#-table-of-contents)
 - [About <a name = "about"></a>](#about-)
 - [website description <a name = "website-description"></a>](#website-description-)
 - [Project setup <a name = "Project-setup"></a>](#project-setup-)
 - [Compiles and hot-reloads for development <a name = "Compiles-and-hot-reloads-for-development"></a>](#compiles-and-hot-reloads-for-development-)
 - [Website link <a name = "link"></a>](#website-link-)
+- [ScreenShots from the game: <a name = "screen-shots"></a>](#screenshots-from-the-game-)
 - [Contributors <a name = "Contributors"></a>](#contributors-)
 
 ## About <a name = "about"></a>
@@ -27,6 +27,47 @@
 
 ## Website link <a name = "link"></a>
 - https://project-planner-eight.vercel.app/
+
+## ScreenShots from the game: <a name = "screen-shots"></a>
+<h3 align='left'>Main Screen:</h3>
+
+![Capture](https://user-images.githubusercontent.com/88618793/188425663-3aba84ef-221b-4cd7-afb9-8c1657259c13.PNG)
+
+ <h3 align='left'>When you click on "Add Project":</h3>
+
+![Capture2](https://user-images.githubusercontent.com/88618793/188425695-a61f144e-7336-4a80-ace4-615cfc120822.PNG)
+
+<h3 align='left'>If you enter empty title or description it will give you error:</h3>
+
+![Capture3](https://user-images.githubusercontent.com/88618793/188425786-74fedcb5-4f4b-491a-8425-4a9621e4580a.PNG)
+
+<h3 align='left'>When you enter the fields:</h3>
+
+![Capture4](https://user-images.githubusercontent.com/88618793/188425961-265c5ac5-f931-4803-9c42-8698c2d94475.PNG)
+
+<h3 align='left'>You will see your new added project in the projects list:</h3>
+
+![Capture5](https://user-images.githubusercontent.com/88618793/188426263-7686ff53-a2bc-4eb6-af00-35b98eb5ccf3.PNG)
+
+<h3 align='left'>If you click on delete icon:</h3>
+
+![Capture6](https://user-images.githubusercontent.com/88618793/188426390-e672ce8b-12f2-44a8-8715-f835dc9af531.PNG)
+
+<h3 align='left'>If you click on complete icon:</h3>
+
+![Capture7](https://user-images.githubusercontent.com/88618793/188426514-547ef4d1-16b1-4343-8a57-33e639b26e07.PNG)
+
+<h3 align='left'>you will see the completed project in "COMPLETE" section:</h3>
+
+![Capture8](https://user-images.githubusercontent.com/88618793/188426573-be17ec1e-054e-4e51-bf21-81eb513e9954.PNG)
+
+<h3 align='left'>in "ONGOING" section you will see projects that you don't finish them:</h3>
+
+![Capture9](https://user-images.githubusercontent.com/88618793/188426680-91341431-5d43-4fb1-8508-4706c8fe62f9.PNG)
+
+
+
+
 
 ## Contributors <a name = "Contributors"></a>
 
